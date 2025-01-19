@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "planetoids",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "BTA! Planetoids",
+  "description": "A mod adding the old Planetoids world generator to BTA!",
   "authors": [
-    "Turnip Labs"
+    "Cookie Cakes"
   ],
   "contact": {
-    "homepage": "",
-    "sources": ""
+    "sources": "https://github.com/FatherCheese/bta-planetoids",
+		"issues": "https://github.com/FatherCheese/bta-planetoids/issues"
   },
 
 	"icon": "icon.png",
@@ -19,24 +19,21 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+      "cookie.planetoids.Planetoids"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"cookie.planetoids.Planetoids"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
-		],
-		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"cookie.planetoids.Planetoids"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+		"planetoids.mixins.json"
   ],
 
   "depends": {
-		"minecraft": "^7.2-beta",
+		"minecraft": "*",
     "fabricloader": ">=0.15.5"
   },
   "suggests": {
