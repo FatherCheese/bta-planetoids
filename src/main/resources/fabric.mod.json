@@ -8,6 +8,9 @@
   "authors": [
     "Cookie Cakes"
   ],
+	"contributors": [
+		"Marketing (icon)"
+	],
   "contact": {
     "sources": "https://github.com/FatherCheese/bta-planetoids",
 		"issues": "https://github.com/FatherCheese/bta-planetoids/issues"
